@@ -60,11 +60,19 @@ Install RStudio and Microsoft R Open on Linux
 
 ### PCA
 
+```R
+
 Z = matrix(c(2,3,4,8,7,1,3,2), nrows=4, ncols=2, byrow=TRUE)
+
+```
+
+```R
 
 pca.eigen_data(Z,4,2)
 pca.pca_normalizer(Z)
 pca.pca_transform(Z)
+
+```
 
 ## Python on solving a system of equations
 
