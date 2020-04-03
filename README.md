@@ -96,6 +96,8 @@ def hermitian(M):
 
 ```
 
+## Worked out example of Eigen vectors for earthquake resistance
+
 ```python
 
 stiffness_floor = stiffness_storey(22360e3, 0.001893, 3.5**3)
@@ -126,11 +128,21 @@ T                   =       1 / omega
 
 ```
 
+## Response modeling parameters
+
+### 1. Model Participation Factor ( A DEA - Data Envelopment Analysis factor )
+
 ```python
 
 modal_participation_factors(
     omega, eigen_vectors
 )
+
+```
+
+### 2. Model Mass ( A DEA - Data Envelopment Analysis factor )
+
+```python
 
 modal_mass(
     omega, eigen_vectors
