@@ -91,8 +91,8 @@ Eigen vectors are valid solutions to discretize and orthogonolize a singular mat
 ```python
 
 def hermitian(M):
-    H = np.matrix.H(M)
-    return (H + np.triu(M)) / 2
+    H = np.matrix(M)
+    return H.H
 
 ```
 

@@ -9,8 +9,8 @@ def eigen_inertia(I):
     return values, vectors
 
 def hermitian(M):
-    H = np.matrix.H(M)
-    return (H + np.triu(M)) / 2
+    H = np.matrix(M)
+    return H.H
 
 def stiffness_storey(E, I, L):
 
